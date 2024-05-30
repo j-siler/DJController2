@@ -34,6 +34,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         custombutton.h
         custombutton.cpp
         customcuedialog.ui
+        deck.h deck.cpp deck.ui
 
 
     )

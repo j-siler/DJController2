@@ -8,6 +8,7 @@
 #include <QRegularExpression>
 
 #include "custombutton.h"
+#include "deck.h"
 
 const unsigned NUM_CUE_BUTTONS(CustomButton::NUM_CUE_BUTTONS);
 
@@ -28,7 +29,7 @@ private slots:
     void on_CueButton_1_leftClicked();
     void on_CueButton_1_rightClicked();
     void on_CueButton_1_shiftedLeftClicked();
-    void on_CueButton_1_shiftedRightCLicked();
+    void on_CueButton_1_shiftedRightClicked();
     void on_CueButton_2_leftClicked();
     void on_CueButton_2_shiftedLeftClicked();
     void on_CueButton_2_rightClicked();

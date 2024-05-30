@@ -96,7 +96,7 @@ void MainWindow::on_CueButton_8_rightClicked() {
     changeButtonText(_cueButtons[7], "Custom");
 }
 
-void MainWindow::on_CueButton_1_shiftedRightCLicked() {
+void MainWindow::on_CueButton_1_shiftedRightClicked() {
     changeButtonColor(_cueButtons[0], CustomButton::CB_GREY);
     changeButtonText(_cueButtons[0], "");
     }
