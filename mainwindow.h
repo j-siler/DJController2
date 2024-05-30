@@ -25,6 +25,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+protected:
+
 private slots:
     void on_CueButton_1_leftClicked();
     void on_CueButton_1_rightClicked();
@@ -67,5 +69,6 @@ private:
     void showCustomCueDialog(unsigned cueNum);
     Ui::MainWindow *ui;
     CustomButton* _cueButtons[NUM_CUE_BUTTONS];
+    Deck *deck;
 };
 #endif // MAINWINDOW_H

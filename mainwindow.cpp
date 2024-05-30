@@ -8,6 +8,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , deck(nullptr)
 {
     ui->setupUi(this);
     int index=0;

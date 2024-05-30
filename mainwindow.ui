@@ -401,7 +401,7 @@ background-color: rgb(128, 128, 128);</string>
      </rect>
     </property>
    </widget>
-   <widget class="Deck" name="widget_2" native="true">
+   <widget class="Deck" name="Deck1" native="true">
     <property name="geometry">
      <rect>
       <x>630</x>
