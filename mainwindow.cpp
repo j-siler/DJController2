@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     int index=0;
     for(auto buttonP:
-        {
+         {
           ui->CueButton_1, ui->CueButton_2, ui->CueButton_3, ui->CueButton_4,
           ui->CueButton_5, ui->CueButton_6, ui->CueButton_7, ui->CueButton_8})
     {
@@ -23,7 +23,11 @@ MainWindow::MainWindow(QWidget *parent)
         buttonP->btnNumber(index);
         changeButtonColor(buttonP, buttonP->currentColor());
         ++index;
-     }
+    }
+    // Example: Add image to Deck1 using the resource path
+    QString imagePath(":/resources/Images/Waveform.png");
+    ui->Deck1->addImageToOverview(imagePath);
+
 }
 
 MainWindow::~MainWindow()
@@ -100,7 +104,7 @@ void MainWindow::on_CueButton_8_rightClicked() {
 void MainWindow::on_CueButton_1_shiftedRightClicked() {
     changeButtonColor(_cueButtons[0], CustomButton::CB_GREY);
     changeButtonText(_cueButtons[0], "");
-    }
+}
 void MainWindow::on_CueButton_2_shiftedRightClicked() {
     changeButtonColor(_cueButtons[1], CustomButton::CB_GREY);
     changeButtonText(_cueButtons[1], "");
